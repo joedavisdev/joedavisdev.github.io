@@ -1,6 +1,6 @@
 # Site wide configuration
 
-title:            Site Title
+title:           Joe Davis 
 locale:           en_US
 url:
 
@@ -26,12 +26,12 @@ kramdown:
 
 # Site owner
 owner:
-  name: Your Name
+  name: Joe Davis
   avatar: bio-photo.jpg
-  bio: "Describe your self."
+  bio: "3D graphics enthusiast & ocassional app developer. Currently working at Imagination Technologies, leading developer support for PowerVR Graphics."
   email:
-  disqus-shortname:
-  twitter: #username
+  disqus-shortname: joedavisdev
+  twitter: joedavisdev 
   facebook: #username
   google:
     plus: #username
@@ -40,9 +40,9 @@ owner:
     ad-client:
     ad-slot:
   bing-verify:
-  github: #username
-  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: #username
+  github: joemdavis
+  stackoverflow: 860284/joe-davis
+  linkedin: joedavisdev 
   xing: #username
   instagram: #username
   lastfm: #username
