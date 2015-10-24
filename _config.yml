@@ -1,8 +1,10 @@
 # Site wide configuration
 
-title:           Joe Davis 
-locale:           en_US
-url:
+title:       Joe Davis
+blog-name:   Joe Davis' blog 
+locale:      en_US
+url:         joedavisdev.github.io 
+description: 
 
 
 # Jekyll configuration
@@ -29,7 +31,7 @@ owner:
   name: Joe Davis
   avatar: bio-photo.jpg
   bio: "3D graphics enthusiast & ocassional app developer. Currently working at Imagination Technologies, leading developer support for PowerVR Graphics."
-  email:
+  email: joedavisdev@gmail.com
   disqus-shortname: joedavisdev
   twitter: joedavisdev 
   facebook: #username
