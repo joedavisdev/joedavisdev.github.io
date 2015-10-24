@@ -1,6 +1,6 @@
 # License
 
-The following directories and their contents are Copyright Mu-An Chiou. You may not reuse anything therein without my permission:
+The following directories and their contents are Copyright Joe Davis. You may not reuse anything therein without prior permission:
 
 	_posts/
 	images/
