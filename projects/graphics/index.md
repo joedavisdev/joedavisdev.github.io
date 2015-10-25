@@ -4,7 +4,7 @@ title: "Projects: 3D graphics"
 permalink: /projects/graphics/
 ---
 
-# iOS Metal demos
+## iOS Metal demos
 
 [GitHub page](https://github.com/joemdavis/metal-demos)
 
