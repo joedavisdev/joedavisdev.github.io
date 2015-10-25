@@ -8,8 +8,7 @@ description:
 
 
 # Jekyll configuration
-
-permalink:   /:categories/:title/
+permalink:   posts/:year/:month/:day/:title
 markdown:    kramdown
 highlighter: pygments
 sass:
