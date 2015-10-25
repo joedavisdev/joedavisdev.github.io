@@ -2,6 +2,10 @@
 layout: page
 title: "Resources: 3D graphics"
 permalink: /resources/graphics/
+image:
+  feature: resources/graphics/sketchfab.jpg
+  credit: SketchFab - Angryfly3D
+  creditlink: https://sketchfab.com/angryfly3d
 ---
 
 ## Open-source friendly
