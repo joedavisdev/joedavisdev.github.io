@@ -1,9 +1,7 @@
 ---
 layout: home
-excerpt: "A minimal Jekyll theme for your blog by designer Michael Rose."
-tags: [Jekyll, theme, responsive, blog, template]
+excerpt: "Joe Davis' personal website, where he gets to blabber on his blog and boast about the odd hobby project"
+tags: [3D graphics, OpenGL ES, Metal, iOS, Android, OS X]
 image:
-  feature: sample-image-1.jpg
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+  feature: rocks.jpg
 ---
