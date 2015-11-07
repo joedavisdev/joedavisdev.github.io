@@ -2,29 +2,52 @@
 layout: post
 title:  "Metal demos"
 date:   2015-11-7 16:15
-excerpt: An initial overview of my Metal demos project
+excerpt: An overview of the iOS Metal demos project I started a little while back
 categories: site-update
 tags: [dev diary,3D graphics,Metal,iOS]
 comments: true
 ---
 
-Although I spend a lot of time debugging and profiling 3D graphics software, my expertise is very OpenGL/OpenGL ES focussed. I used DirectX a bit at university but haven't really touched it since I graduated. I suspect that's due to my day job being dominated by OpenGL ES and that I ditched my personal Windows desktop in favour of a Mac laptop ~2010. A few months ago when the developer community was getting excited about the arrival of DX12 and the promise of a cross-platform explicit graphics API in Vulkan, I thought I should finally get my hands dirty with something new. In addition to my Mac I also have a Metal-capable iOS device, so writing a few Metal demos seemed like a good place to start. A bonus for me is that I already know a lot about the GPUs in Apple's mobile devices, so I'm hoping it won't be too tricky for me to write optimal Metal code for them :)
+Although I spend a lot of time debugging and profiling 3D graphics software, my expertise is very OpenGL/OpenGL ES focussed. I used DirectX a bit at university but haven't really touched it since I graduated. I suspect that's due to my day job being dominated by OpenGL ES and that I ditched my personal Windows desktop in favor of a Mac laptop ~2010. A few months ago when the developer community was getting excited about the arrival of DX12 and the promise of a cross-platform explicit graphics API in Vulkan, I thought I should finally get my hands dirty with something new. In addition to my Mac I also have a Metal-capable iOS device, so writing a few Metal demos seemed like a good place to start. A bonus for me is that I already know a lot about the GPUs in Apple's mobile devices, so I'm hoping it won't be too tricky for me to write optimal Metal code for them :)
 
 According to GitHub it's been more than three months since my first [metal-demos](https://github.com/joedavisdev/metal-demos) repo commit...I'm hoping that if I blog about the project's progress, I'll guilt myself into dedicating more time to it!
 
+## Getting started
+Rather than writing everything from scratch I decided to use code from Apple's Metal SDK as a starting point. Very little rendering code is shared in Apple's demos. I suspect this is by design as the code should demonstrate how to interact with the API directly - not how to abstract it. Unlike the Apple SDK, one of the goals of my project is to abstract as much as possible into reusable helper classes. This should make it easier for my demos to manage buffers and avoid redundant Metal API calls.
+
+My preferred programming language for the project would have been C++11, but Apple requires the API calls for their Frameworks to be issued from Swift or Objective-C code. I've opted to use Objective-C to interact with the API and C++ for everything else.
+
+<br>
+So - that's a quick overview of how I've approached the project. Here's a summary of what I've implemented so far:
+
 ## Current status
 
-After downloading Apple's Metal SDK and hacking away at the examples I began incrementally abstracting functionality into a small set of helper classes. The aim of doing so was to create a common rendering layer I could use in all my demos. I wanted the option of reusing code later with other APIs (e.g. DX12 & Vulkan) so I've used C++ classes where possible. As Metal API calls can only be made from Swift or Objective-C, there isn't an awful lot of C++ code in the repo yet (excluding GLM etc. that I've checked in to the thirdParty directory).
+### 01_Basic3D
+This is a modified version of Apple's MetalBasic3D demo. I've used the demo to validate my rendering helper classes as I've implemented them. Although this demo is working, I'll be tweaking it as I add more to the rendering abstraction layers. The demo code can be found [here](https://github.com/joedavisdev/metal-demos/tree/master/demos/01_Basic3D).
 
-To validate the helper classes, I integrated them into Apple's MetalBasic3D demo. My version of the demo is a somewhat moving target as I continue to tweak the helper classes. The latest revision of the demo can be found [here](https://github.com/joedavisdev/metal-demos/tree/master/demos/01_Basic3D).
+![cubes]({{url}}/images/posts/2015117/01_Basic3D.png)
 
-The next step was to write a new demo using the helper classes. Rather than focusing on specific rendering techniques, I've chosen to implement a simple 3D mesh renderer in this second demo. As I'm familiar with the format and it's well optimised for run-time GPU cache access, I've chosen to use the [POD 3D scene format](http://community.imgtec.com/developers/powervr/tools/pvrgeopod/). The POD mesh rendering demo can be found [here](https://github.com/joedavisdev/metal-demos/tree/master/demos/02_BasicPODScene).
+### 02_BasicPODScene
+Once I'd implemented the initial helper classes, the next logical step was to write a demo where assets (3D scenes, textures and shaders) are loaded from the app bundle. The [PowerVR Object Data (POD) format](http://community.imgtec.com/developers/powervr/tools/pvrgeopod/) is a binary container for cameras, lights, meshes and animations. I'm already familiar with it and it's well optimized (for example mesh data is sorted during POD generation to improve GPU cache efficiency), so it seemed like the right format for me to use.
+
+I've used the PowerVR SDK's POD loading code rather than writing my own. Currently, the demo loads and renders a Stanford bunny model with a simple lighting effect.
+
+![Stanford bunny]({{url}}/images/posts/2015117/02_BasicPODScene.png)
+
+#### Todo
+
+* Replace the naive mesh handling code with something more robust
+* Load and apply textures to the mesh
+
+The code for the demo can be found [here](https://github.com/joedavisdev/metal-demos/tree/master/demos/02_BasicPODScene).
 
 ## What's next?
-Before adding any new demos I'd like to refine and extend my helper classes. Tasks on my todo list include:
+There are a few tasks I'd like to complete before writing any new demos:
 
-* JSON scene definition (pipelines, actors, cameras, render targets etc.)
-	* This may take a while as I'll probably have to write a bunch of new helper classes
-* XCode project generation
-	* I'll probably use CMake for this, unless I find something better
-	* I might add OS X Metal support if it doesn't seem too tricky. My Macbook Pro is too old to run Metal though, so I won't be able to test it...
+### JSON scene definition
+In the current demos all scene components (pipelines, actors, lights, cameras, render targets etc.) are hard-coded. Moving these definitions to a structured format like JSON should make the rendering code more flexible.
+
+### XCode project generation
+I like XCode as an IDE, but I can't stand working with native XCode projects. They're a pain to diff and hand edit (unlike Visual Studio projects or Linux Makefiles), and I usually encounter issues upgrading when a new version of XCode is released. Moving to a project generator should simplify maintenance, particularly if I decide to add OS X support.
+
+As I've used CMake for iOS before, I'll probably give that a go.
