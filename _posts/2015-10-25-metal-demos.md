@@ -8,7 +8,9 @@ tags: [dev diary,3D graphics,Metal,iOS]
 comments: true
 ---
 
-A few months ago when everyone seemed to be getting excited about the wave of new explicit graphics APIs, I thought I should finally get my hands dirty with one. As I have a Mac and a Metal-capable iOS device, it seemed like a good place to start. I've got a pretty good idea of how to optimise for Apple's mobile GPUs but haven't had much exposure to the API yet. According to GitHub it's been more than three months since my first check-in to the [metal-demos](https://github.com/joedavisdev/metal-demos) repo...I'm hoping that if I blog about the project's progress regularly, I'll guilt myself into dedicating more time to it!
+Although I spend a lot of time debugging and profiling 3D graphics software, my expertise is very OpenGL/OpenGL ES focussed. I used DirectX a bit at university but haven't really touched it since I graduated. I suspect that's due to my day job being dominated by OpenGL ES and that I ditched my personal Windows desktop in favour of a Mac laptop ~2010. A few months ago when the developer community was getting excited about the arrival of DX12 and the promise of a cross-platform explicit graphics API in Vulkan, I thought I should finally get my hands dirty with something new. In addition to my Mac I also have a Metal-capable iOS device, so writing a few Metal demos seemed like a good place to start. A bonus for me is that I already know a lot about the GPUs in Apple's mobile devices, so I'm hoping it won't be too tricky for me to write optimal Metal code for them :)
+
+According to GitHub it's been more than three months since my first [metal-demos](https://github.com/joedavisdev/metal-demos) repo commit...I'm hoping that if I blog about the project's progress, I'll guilt myself into dedicating more time to it!
 
 ## Current status
 
