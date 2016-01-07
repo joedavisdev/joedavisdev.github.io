@@ -44,29 +44,3 @@ I wrote this one over the Christmas 2014 period to track team scores when playin
 
 <br>
 ![Score Tracker](../../images/projects/score_tracker/score_tracker.jpg)
-
-## Quizzie
-Two simple iOS quiz games written in Swift. A useful project to try out a new programming language, AutoLayouts and get to grips with App Store deployment. The app bit was easy. Writing 50 questions on One Direction was pretty mind numbing though :|
-
-## Quizzie: Beyonce edition
-
-<br>
-
-<a href="https://itunes.apple.com/gb/app/quizzie-beyonce-edition/id933552197?mt=8">
-<img src="../../images/app_stores/ios_badge.svg" height="64" alt="iOS App Store"/>
-</a>
-
-<br>
-![Quizzie: Beyonce edition](../../images/projects/quizzie/quizzie_beyonce.jpg)
-
-## Quizzie: One Direction edition
-
-<br>
-
-<a href="https://itunes.apple.com/gb/app/quizzie-one-direction-1d-edition/id949380361?mt=8">
-<img src="../../images/app_stores/ios_badge.svg" height="64" alt="iOS App Store"/>
-</a>
-
-<br>
-![Quizzie: One Direction edition](../../images/projects/quizzie/quizzie_1D.jpg)
-
