@@ -1,1 +1,0 @@
-/Users/joe/Dropbox/blog/2016-01-08-metal-demos-rendering-engine-pt1.md
