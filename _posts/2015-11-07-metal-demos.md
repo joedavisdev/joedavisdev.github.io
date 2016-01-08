@@ -3,7 +3,7 @@ layout: post
 title:  "Metal demos"
 date:   2015-11-07 20:48
 excerpt: An overview of the iOS Metal demos project I started a little while back
-categories: site-update
+categories: 3d-graphics
 tags: [dev diary,3D graphics,Metal,iOS]
 comments: true
 ---
