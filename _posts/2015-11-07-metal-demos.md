@@ -24,14 +24,14 @@ So - that's a quick overview of how I've approached the project. Here's a summar
 ### 01_Basic3D
 This is a modified version of Apple's MetalBasic3D demo. I've used the demo to validate my rendering helper classes as I've implemented them. Although this demo is working, I'll be tweaking it as I add more to the rendering abstraction layers. The demo code can be found [here](https://github.com/joedavisdev/metal-demos/tree/master/demos/01_Basic3D).
 
-![cubes]({{url}}/images/posts/2015117/01_Basic3D.png)
+![cubes](/images/posts/2015117/01_Basic3D.png)
 
 ### 02_BasicPODScene
 Once I'd implemented the initial helper classes, the next logical step was to write a demo where assets (3D scenes, textures and shaders) are loaded from the app bundle. The [PowerVR Object Data (POD) format](http://community.imgtec.com/developers/powervr/tools/pvrgeopod/) is a binary container for cameras, lights, meshes and animations. I'm already familiar with it and it's well optimized (for example mesh data is sorted during POD generation to improve GPU cache efficiency), so it seemed like the right format for me to use.
 
 I've used the PowerVR SDK's POD loading code rather than writing my own. Currently, the demo loads and renders a Stanford bunny model with a simple lighting effect.
 
-![Stanford bunny]({{url}}/images/posts/2015117/02_BasicPODScene.png)
+![Stanford bunny](/images/posts/2015117/02_BasicPODScene.png)
 
 #### Todo
 
