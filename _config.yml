@@ -3,7 +3,10 @@
 title:       Joe Davis
 blog-name:   Joe Davis' blog 
 locale:      en_US
-url:         
+# url for local debugging
+#url:        http://localhost:4000
+# url for live website
+url:         http://joedavisdev.co.uk
 description: 
 
 

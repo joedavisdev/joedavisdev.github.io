@@ -14,7 +14,7 @@ I found a bunch of useful blog posts explaining the fundamentals of Cordova deve
 
 # What is Apache Cordova?
 
-![Cordova]({{ site.url }}/images/posts/cordova-logo.png)
+![Cordova](/images/posts/cordova-logo.png)
 
 Cordova is a set of tools that enable developers to package websites into apps that can be distributed through mobile app stores. This includes iOS, Android and Windows Phone. The generated apps simply create a full screen web view and display the pages the developer has packaged.
 
@@ -55,7 +55,5 @@ Before switching to Bootstrap, I was writing my own CSS code. This was ok for a
 
 
 # Conclusion
-
-[![angularAndBootstrap](https://joedavisdev.files.wordpress.com/2015/06/angularandbootstrap1.png?w=300)](https://joedavisdev.files.wordpress.com/2015/06/angularandbootstrap1.png)
 
 I've touched on my reasons for giving Cordova a go and briefly explained why I settled on AngularJS and Bootstrap for UI front-end, back-end and page routing. I should be able to put a few example projects for future posts :)
