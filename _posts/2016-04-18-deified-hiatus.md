@@ -2,7 +2,7 @@
 layout: post
 title:  "Deified renderer hiatus"
 date:   2016-04-18 08:44
-excerpt: ""
+excerpt: "Deified renderer hiatus"
 categories: 3d-graphics
 tags: [dev diary,3D graphics,Metal,iOS]
 comments: true
