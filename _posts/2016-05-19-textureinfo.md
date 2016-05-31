@@ -11,8 +11,6 @@ I was after a tool recently to batch print PVR file header information, but coul
 
 `textureinfo` is a command-line utility that prints texture container header information to stdout. If the `--csv` flag is given, it'll dump the header info to a CSV file instead of printing it. The tool only supports PVR v3 containers right now, but I'll probably add a few more formats in the future.
 
-The code is hosted on GitHub under an MIT licence [here].
+The code is hosted on GitHub under an MIT licence [here](https://github.com/joedavisdev/textureinfo).
 
 Makefiles/projects are generated via CMake.
-
-[here]:https://github.com/joedavisdev/textureinfo
