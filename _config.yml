@@ -1,19 +1,19 @@
 # Site wide configuration
 
 title:       Joe Davis
-blog-name:   Joe Davis' blog 
+blog-name:   Joe Davis' blog
 locale:      en_US
 # url for local debugging
 #url:        http://localhost:4000
 # url for live website
 url:         http://joedavisdev.co.uk
-description: 
+description:
 
 
 # Jekyll configuration
 permalink:   posts/:year/:month/:day/:title
 markdown:    kramdown
-highlighter: rouge 
+highlighter: rouge
 sass:
   sass_dir: _sass
   style: compressed
@@ -32,10 +32,10 @@ kramdown:
 owner:
   name: Joe Davis
   avatar: bio-photo.jpg
-  bio: "3D graphics enthusiast & ocassional app developer. Currently working at Imagination Technologies, leading developer support for PowerVR Graphics."
+  bio: "3D graphics enthusiast & ocassional app developer. Game Ecosystem Developer Relations Engineer, Samsung Electronics. Previously developer support lead for PowerVR Graphics."
   email: joedavisdev@gmail.com
   disqus-shortname: joedavisdev
-  twitter: joedavisdev 
+  twitter: joedavisdev
   facebook: #username
   google:
     plus: #username
@@ -46,7 +46,7 @@ owner:
   bing-verify:
   github: joedavisdev
   stackoverflow: 860284/joe-davis
-  linkedin: joedavisdev 
+  linkedin: joedavisdev
   xing: #username
   instagram: #username
   lastfm: #username
