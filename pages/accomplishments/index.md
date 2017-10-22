@@ -9,6 +9,7 @@ permalink: /pages/accomplishments/
 
 ## Publications
 
+* [developer.samsung.com/game - Game asset, OpenGL ES & Vulkan user guides](http://developer.samsung.com/game#user-guide) (October 2017 release - lead author)
 * [PowerVR Hardware Architecture Overview for Developers](http://cdn.imgtec.com/sdk-documentation/PowerVR+Hardware.Architecture+Overview+for+Developers.pdf) (contributor)
 * [PowerVR Performance Recommendations The Golden Rules](http://cdn.imgtec.com/sdk-documentation/PowerVR+Performance+Recommendations.The+Golden+Rules.pdf) (contributor)
 * [PowerVR Performance Recommendations](http://cdn.imgtec.com/sdk-documentation/PowerVR.Performance+Recommendations.pdf) (contributor)
@@ -23,7 +24,7 @@ permalink: /pages/accomplishments/
 
 ### 2017
 
-#### Ludicious
+#### Ludicious, Zurich
 
 * [Optimizing OpenGL ES & Vulkan VR renderers](http://www.ludicious.ch/session/optimizing-opengl-es-vulkan-vr-renderers/)
 
@@ -35,6 +36,10 @@ permalink: /pages/accomplishments/
 #### Casual Connect Berlin
 
 * Optimizing High-End Games for Premium Mobile Devices ([video](https://www.youtube.com/watch?v=mt_L7s_pm2s))
+
+#### Devcom, Cologne
+
+* Bringing Games to New Platforms
 
 ### 2016
 

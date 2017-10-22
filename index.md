@@ -1,7 +1,7 @@
 ---
 layout: home
-excerpt: "Joe Davis' personal website, where he gets to blabber on his blog and boast about the odd hobby project"
-tags: [3D graphics, OpenGL ES, Metal, iOS, Android, OS X]
+excerpt: "-"
+tags: [3D graphics, OpenGL ES, Vulkan, Metal, iOS, Android, macOS]
 image:
   feature: rocks.jpg
 ---
